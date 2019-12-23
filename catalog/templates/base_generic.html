@@ -12,6 +12,7 @@
   <!-- Добавление дополнительного статического CSS файла -->
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  
 </head>
 
 <body>
@@ -25,6 +26,9 @@
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="">All books</a></li>
           <li><a href="">All authors</a></li>
+          <li><a href="">All genre</a></li>
+          {% load static %}
+        <img src="{% static 'catalog/static/image/imag1.jpg' %}" alt="My image"/>
       </ul>
      {% endblock %}
       </div>
